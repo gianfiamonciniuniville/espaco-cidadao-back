@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: nitric-sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "espaco!cidadao"
+      ACCEPT_EULA: "Y"
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "espaco!cidadao", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
