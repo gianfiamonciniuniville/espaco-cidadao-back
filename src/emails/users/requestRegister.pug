@@ -1,0 +1,16 @@
+html
+  body
+    p Olá,
+    p O usuario: #{nome} está solicitando acesso ao sistema "ControllerHUB"
+    p Dados do usuario:
+    p - Nome: #{nome}
+    p - Email: #{email}
+    p - Departamento: #{departamento}
+    p Caso queira aprovar o acesso, escolha um dos departamentos e clique no link correspondente a sua escolha. Se não, desconsidere esse e-mail e informe ao admnistrador.
+    p Admnistrador: http://10.160.12.251:9090/user/validate-register?perfil=21&token=#{token}
+    p Comercial: http://10.160.12.251:9090/user/validate-register?perfil=32&token=#{token}
+    p Marketing: http://10.160.12.251:9090/user/validate-register?perfil=23&token=#{token}
+    p Telemarketing: http://10.160.12.251:9090/user/validate-register?perfil=24&token=#{token}
+    p Recepção: http://10.160.12.251:9090/user/validate-register?perfil=27&token=#{token}
+    p Desenvolvimento: http://10.160.12.251:9090/user/validate-register?perfil=30&token=#{token}
+    p Cadastro: http://10.160.12.251:9090/user/validate-register?perfil=31&token=#{token}

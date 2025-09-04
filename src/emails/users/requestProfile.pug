@@ -1,0 +1,15 @@
+html
+  body
+    p Olá,
+    p O usuario: #{nome} está solicitando associação a um perfil do sistema "ControllerHUB"
+    p Dados do usuario:
+    p - Nome: #{nome}
+    p - Email: #{email}
+    p Caso queira aprovar o acesso, escolha um dos departamentos e clique no link correspondente a sua escolha. Se não, desconsidere esse e-mail e informe ao admnistrador.
+    p Admnistrador: http://10.160.12.251:9090/profile/validate-request-profile?profile=21&user=#{id}
+    p Comercial: http://10.160.12.251:9090/profile/validate-request-profile?profile=32&user=#{id}
+    p Marketing: http://10.160.12.251:9090/profile/validate-request-profile?profile=23&user=#{id}
+    p Telemarketing: http://10.160.12.251:9090/profile/validate-request-profile?profile=24&user=#{id}
+    p Recepção: http://10.160.12.251:9090/profile/validate-request-profile?profile=27&user=#{id}
+    p Desenvolvimento: http://10.160.12.251:9090/profile/validate-request-profile?profile=30&user=#{id}
+    p Cadastro: http://10.160.12.251:9090/profile/validate-request-profile?profile=31&user=#{id}
